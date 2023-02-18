@@ -1,5 +1,6 @@
 // Components
 import Head from "next/head";
+import BannerHireMe from "../components/BannerHireMe/BannerHireMe";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
@@ -21,6 +22,7 @@ export default function Home() {
       <MyService />
       <MyWorks />
       <LastWorks />
+      <BannerHireMe />
 
       <Footer />
     </>

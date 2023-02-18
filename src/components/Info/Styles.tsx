@@ -28,12 +28,38 @@ export const InfoStyled = styled.section`
   }
 
   button {
-    span::after {
-      content: "-->";
+    display: flex;
+    gap: 12px;
+
+    transition: 0.2s;
+
+    span {
+      position: relative;
+      ::after {
+        content: ">";
+      }
+
+      ::before {
+        content: "";
+        width: 15px;
+        background-color: white;
+        height: 3px;
+        position: absolute;
+
+        top: 50%;
+        left: -7px;
+
+        transition: 0.2s;
+      }
     }
 
-    :hover span::after {
-      content: "--->";
+    :hover {
+      gap: 40px;
+
+      span::before {
+        width: 30px;
+        left: -22px;
+      }
     }
   }
 
