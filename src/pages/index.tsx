@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
+import LastWorks from "../components/LastWorks/LastWorks";
 import { MyService } from "../components/MyService/MyService";
 import { MyWorks } from "../components/MyWorks/MyWorks";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Info />
       <MyService />
       <MyWorks />
+      <LastWorks />
 
       <Footer />
     </>
