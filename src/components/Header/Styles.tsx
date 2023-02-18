@@ -122,6 +122,7 @@ export const MenuMobile = styled.div`
       display: unset;
     }
     position: fixed;
+    padding: 16px;
   }
 `;
 
