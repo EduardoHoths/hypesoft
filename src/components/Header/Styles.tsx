@@ -10,6 +10,9 @@ export const HeaderStyled = styled.header`
   @media (min-height: 969px) {
     height: 969px;
   }
+  @media (max-height: 680px){
+    height: 705px;
+  }
 
   @media (max-width: 414px) {
     height: auto;
@@ -89,7 +92,6 @@ export const MenuMobile = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 16px;
   z-index: 1;
   position: static;
   top: 0;
@@ -365,12 +367,12 @@ export const ImageContainer = styled.div`
   @media (max-width: 768px) {
     ::after {
       width: 350px;
-      height: calc(657px + 96px);
+      /* height: calc(100vh - 96px); */
     }
 
     img {
       max-width: 350px;
-      height: calc(657px);
+      /* height: calc(100vh - 96px); */
       right: 50px;
     }
 
