@@ -28,7 +28,7 @@ export const BannerStyled = styled.section`
     }
   }
 
-  button {
+  a {
     display: flex;
     gap: 12px;
 

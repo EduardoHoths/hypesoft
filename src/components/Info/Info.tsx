@@ -27,9 +27,9 @@ export function Info() {
             <span className="text">Completed Projects</span>
           </div>
         </Statistics>
-        <button className="btn purple">
+        <a href="https://www.linkedin.com/in/eduardohoths/" target={"_blank"} className="btn purple">
           SAY HI <span></span>
-        </button>
+        </a>
       </div>
     </InfoStyled>
   );

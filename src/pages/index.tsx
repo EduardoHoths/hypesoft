@@ -7,6 +7,7 @@ import { Info } from "../components/Info/Info";
 import LastWorks from "../components/LastWorks/LastWorks";
 import { MyService } from "../components/MyService/MyService";
 import { MyWorks } from "../components/MyWorks/MyWorks";
+import Testimonial from "../components/Testimonial/Testimonial";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <MyWorks />
       <LastWorks />
       <BannerHireMe />
+      <Testimonial />
 
       <Footer />
     </>

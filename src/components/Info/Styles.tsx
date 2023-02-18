@@ -27,8 +27,8 @@ export const InfoStyled = styled.section`
     margin-bottom: 32px;
   }
 
-  button {
-    display: flex;
+  a {
+    display: inline-flex;
     gap: 12px;
 
     transition: 0.2s;
@@ -94,6 +94,10 @@ export const InfoStyled = styled.section`
     p {
       font-size: 12px;
       line-height: 22px;
+    }
+
+    button span::before{
+      height: 2px;
     }
   }
 `;

@@ -55,8 +55,8 @@ export  function Header() {
           </p>
 
           <MoreAbout>
-            <button className="btn purple">HIRE ME</button>
-            <button className="btn">VIEW WORK</button>
+            <a href="https://www.linkedin.com/in/eduardohoths/" target={"_blank"} className="btn purple">HIRE ME</a>
+            <a href="/" className="btn">VIEW WORK</a>
           </MoreAbout>
 
           <Social>
