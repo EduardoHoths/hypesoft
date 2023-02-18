@@ -1,4 +1,4 @@
-import React from 'react'
+// Styles
 import { LastWorksStyled } from './Styles'
 
 export default function LastWorks() {

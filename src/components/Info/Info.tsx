@@ -1,4 +1,4 @@
-import React from "react";
+// Styles
 import { ImageContainer, InfoStyled, Statistics } from "./Styles";
 
 export function Info() {

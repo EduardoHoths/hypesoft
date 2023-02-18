@@ -1,9 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+// Styles
 import { Card, MyServiceStyled } from "./Styles";
 
+// React Icons
 import { BsArrowRight, BsCode, BsPhone } from "react-icons/bs";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+
+// Components
 import { Title } from "../Title/Title";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const myServices = [
   {

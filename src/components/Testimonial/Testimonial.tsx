@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+// React
+import  { useState } from "react";
+
+// React Icons
 import { AiFillStar } from "react-icons/ai";
+
+// Components
 import { Title } from "../Title/Title";
-import { TestimonialArea, TestimonialList, TestimonialStyled } from "./Styled";
+
+// Styles
+import { TestimonialArea, TestimonialList, TestimonialStyled } from "./Styles";
 
 interface ITestimonial {
   id: number;

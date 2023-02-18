@@ -1,8 +1,12 @@
-import React from "react";
+// React Icons
 import { BsArrowRight } from "react-icons/bs";
+
+// Components
 import { Title } from "../Title/Title";
-import { Card, MyWorksStyled } from "./Styles";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+
+// Styles
+import { Card, MyWorksStyled } from "./Styles";
 
 const myWorks = [
   {

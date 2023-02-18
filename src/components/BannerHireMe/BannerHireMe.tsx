@@ -1,4 +1,3 @@
-import React from "react";
 import { BannerStyled } from "./Styles";
 
 export default function BannerHireMe() {

@@ -1,9 +1,14 @@
-import React, { useState } from "react";
-import { AiFillInstagram, AiOutlineMail } from "react-icons/ai";
-import { BsGithub, BsLinkedin,BsTelephone } from "react-icons/bs";
+// React
+import { useState } from "react";
+
+// React Icons
+import { AiFillInstagram } from "react-icons/ai";
+import { BsGithub, BsLinkedin, BsTelephone } from "react-icons/bs";
 import { CiLocationOn, CiMail } from "react-icons/ci";
 import { FiSend } from "react-icons/fi";
 import { ImFacebook } from "react-icons/im";
+
+// Styles
 import { ContactForm, ContactMeStyled, Contacts } from "./Styles";
 
 export default function ContactMe() {
@@ -61,20 +66,20 @@ export default function ContactMe() {
 
         <div>
           <div>
-          <CiLocationOn size={32}/>
+            <CiLocationOn size={32} />
           </div>
 
           <span>Itaquaquecetuba - SP, Brazil</span>
         </div>
         <div>
           <div>
-            <CiMail size={32}/>
+            <CiMail size={32} />
           </div>
           <span>eduardo.hoths@gmail.com</span>
         </div>
         <div>
           <div>
-            <BsTelephone size={28}/>
+            <BsTelephone size={28} />
           </div>
           <span>+55 (11) 96013-3029</span>
         </div>

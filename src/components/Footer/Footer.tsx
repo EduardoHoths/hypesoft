@@ -1,4 +1,3 @@
-import React from "react";
 import { FooterStyled } from "./Styles";
 
 export function Footer() {

@@ -35,10 +35,10 @@ export function Header() {
             <AiOutlineClose size={24} color="white" onClick={() => setMenuIsOpen(false)} />
           </button>
 
-          <a href="#about">ABOUT</a>
-          <a href="#about">SERVICE</a>
-          <a href="#about">WORKS</a>
-          <a href="#about">CONTACT</a>
+          <a href="">ABOUT</a>
+          <a href="">SERVICE</a>
+          <a href="">WORKS</a>
+          <a href="">CONTACT</a>
         </Navigation>
       </MenuMobile>
 
@@ -79,7 +79,7 @@ export function Header() {
               <a href="https://www.facebook.com/eduardohoths/">
                 <ImFacebook size={20} />
               </a>
-              <a href="https://github.com/">
+              <a href="https://github.com/eduardohoths">
                 <BsGithub size={20} />
               </a>
             </div>
