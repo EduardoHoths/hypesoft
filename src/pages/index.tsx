@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
 import { MyService } from "../components/MyService/MyService";
+import { MyWorks } from "../components/MyWorks/MyWorks";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
 
       <Header />
       <Info />
-      <MyService/>
+      <MyService />
+      <MyWorks />
 
       <Footer />
     </>

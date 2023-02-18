@@ -3,6 +3,7 @@ import { Card, MyServiceStyled } from "./Styles";
 
 import { BsArrowRight, BsCode, BsPhone } from "react-icons/bs";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { Title } from "../Title/Title";
 
 const myServices = [
   {
@@ -20,7 +21,7 @@ const myServices = [
 export function MyService() {
   return (
     <MyServiceStyled>
-      <h3>My Service</h3>
+      <Title title="My Service"/>
 
       <div className="cards">
         {myServices.map((service) => (

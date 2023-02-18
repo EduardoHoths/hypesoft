@@ -23,7 +23,7 @@ export function Info() {
             <span className="text">Year of Experience</span>
           </div>
           <div>
-            <span className="number">10+</span>
+            <span className="number">5+</span>
             <span className="text">Completed Projects</span>
           </div>
         </Statistics>

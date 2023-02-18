@@ -10,28 +10,6 @@ export const MyServiceStyled = styled.section`
 
   padding: 0 16px;
 
-  h3 {
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 48px;
-    position: relative;
-    margin-bottom: 50px;
-
-    ::after {
-      content: "";
-      width: 80px;
-      height: 3px;
-      background-color: var(--secondary);
-      position: absolute;
-
-      border-radius: 3px;
-
-      bottom: -16px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
   .cards {
     display: flex;
     gap: 24px;
@@ -114,8 +92,6 @@ export const Card = styled.div`
 
     span {
       opacity: 0;
-
-      /* transition:  opacity 0.1s 0.9s ; */
     }
   }
 
