@@ -1,5 +1,6 @@
 // Components
 import Head from "next/head";
+import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
 
@@ -14,6 +15,8 @@ export default function Home() {
 
       <Header />
       <Info />
+
+      <Footer />
     </>
   );
 }
