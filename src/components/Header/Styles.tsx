@@ -3,8 +3,17 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
   max-width: 1920px;
   margin: 0 auto;
+  height: 100vh;
 
   position: relative;
+
+  @media (min-height: 969px) {
+    height: 969px;
+  }
+
+  @media (max-width: 414px) {
+    height: auto;
+  }
 `;
 
 interface NavigationProps {
@@ -109,14 +118,14 @@ export const Wrapper = styled.div`
 
   max-width: 1920px;
 
-  @media (max-width: 414px){
+  @media (max-width: 414px) {
     margin-top: 50px;
   }
 `;
 
 export const ProfileContainer = styled.div`
   position: absolute;
-  left: 240px;
+  left: 390px;
   top: 228px;
 
   h1 {
