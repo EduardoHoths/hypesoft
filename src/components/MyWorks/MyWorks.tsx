@@ -32,7 +32,7 @@ const myWorks = [
   {
     id: 5,
     img: "https://cdn.discordapp.com/attachments/956662188947435610/1076541246803284038/image.png",
-    title: "A viagem de Chihiro",
+    title: "Spirited Away",
     link: "https://desafios-codelandia-five.vercel.app/",
   },
   {

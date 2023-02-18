@@ -13,7 +13,7 @@ const myServices = [
   },
   {
     id: 2,
-    title: "Responsible Websites",
+    title: "Responsive Websites",
     icon: <BsPhone size={40} color="#000" />,
   },
 ];
