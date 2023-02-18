@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
+import { MyService } from "../components/MyService/MyService";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
 
       <Header />
       <Info />
+      <MyService/>
 
       <Footer />
     </>
