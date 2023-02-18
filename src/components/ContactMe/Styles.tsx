@@ -131,7 +131,7 @@ export const Contacts = styled.div`
     margin-top: 25px;
     display: flex;
     align-items: center;
-    
+
     gap: 12px;
     flex-wrap: wrap;
 
@@ -177,7 +177,10 @@ export const Contacts = styled.div`
       }
     }
 
-    footer{
+    footer {
+      a + a{
+        margin: 0;
+      }
       justify-content: center;
     }
   }

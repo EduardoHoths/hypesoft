@@ -1,9 +1,13 @@
 // Styles
 import { ImageContainer, InfoStyled, Statistics } from "./Styles";
 
+// React Scroll
+import {Element} from 'react-scroll'
+
 export function Info() {
   return (
-    <InfoStyled>
+    <Element name="about">
+      <InfoStyled>
       <ImageContainer>
         <img src="/Dev.png" alt="Laptop image with android code app" />
       </ImageContainer>
@@ -32,5 +36,6 @@ export function Info() {
         </a>
       </div>
     </InfoStyled>
+    </Element>
   );
 }

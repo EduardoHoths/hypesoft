@@ -8,6 +8,9 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 // Styles
 import { Card, MyWorksStyled } from "./Styles";
 
+// React Scroll
+import { Element } from "react-scroll";
+
 const myWorks = [
   {
     id: 1,
@@ -49,7 +52,8 @@ const myWorks = [
 
 export function MyWorks() {
   return (
-    <MyWorksStyled>
+    <Element name="works">
+      <MyWorksStyled>
       <Title title="My Selected Works" />
 
       <div className="cards">
@@ -76,5 +80,6 @@ export function MyWorks() {
         ))}
       </div>
     </MyWorksStyled>
+    </Element>
   );
 }

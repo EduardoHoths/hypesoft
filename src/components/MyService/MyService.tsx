@@ -8,6 +8,10 @@ import { BsArrowRight, BsCode, BsPhone } from "react-icons/bs";
 import { Title } from "../Title/Title";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
+// React Scroll
+import {Element} from "react-scroll";
+
+
 const myServices = [
   {
     id: 1,
@@ -23,7 +27,8 @@ const myServices = [
 
 export function MyService() {
   return (
-    <MyServiceStyled>
+   <Element name="service">
+     <MyServiceStyled>
       <Title title="My Service"/>
 
       <div className="cards">
@@ -50,5 +55,6 @@ export function MyService() {
         ))}
       </div>
     </MyServiceStyled>
+   </Element>
   );
 }

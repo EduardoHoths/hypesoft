@@ -11,6 +11,9 @@ import { ImFacebook } from "react-icons/im";
 // Styles
 import { ContactForm, ContactMeStyled, Contacts } from "./Styles";
 
+// React Scroll
+import { Element } from "react-scroll";
+
 export default function ContactMe() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,7 +21,8 @@ export default function ContactMe() {
   const [message, setMessage] = useState("");
 
   return (
-    <ContactMeStyled>
+    <Element name="contact">
+      <ContactMeStyled>
       <ContactForm>
         <h4>Let me know here.</h4>
 
@@ -100,5 +104,6 @@ export default function ContactMe() {
         </footer>
       </Contacts>
     </ContactMeStyled>
+    </Element>
   );
 }

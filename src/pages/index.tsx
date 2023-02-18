@@ -1,6 +1,7 @@
 // Components
 import Head from "next/head";
 import BannerHireMe from "../components/BannerHireMe/BannerHireMe";
+import ButtonToTop from "../components/ButtonToTop/ButtonToTop";
 import ContactMe from "../components/ContactMe/ContactMe";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
@@ -19,6 +20,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
+      <ButtonToTop />
+
       <Header />
       <Info />
       <MyService />
@@ -26,8 +29,9 @@ export default function Home() {
       <LastWorks />
       <BannerHireMe />
       <Testimonial />
-      <ContactMe/>
+      <ContactMe />
 
+      
       <Footer />
     </>
   );

@@ -18,6 +18,9 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
 import { AiFillInstagram, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
+// React Scroll
+import { Link } from "react-scroll";
+
 export function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -35,10 +38,18 @@ export function Header() {
             <AiOutlineClose size={24} color="white" onClick={() => setMenuIsOpen(false)} />
           </button>
 
-          <a href="">ABOUT</a>
-          <a href="">SERVICE</a>
-          <a href="">WORKS</a>
-          <a href="">CONTACT</a>
+          <Link to="about" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+            ABOUT
+          </Link>
+          <Link to="service" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+            SERVICE
+          </Link>
+          <Link to="works" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+            WORKS
+          </Link>
+          <Link to="contact" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+            CONTACT
+          </Link>
         </Navigation>
       </MenuMobile>
 
@@ -70,16 +81,16 @@ export function Header() {
             <span>Follow me on</span>
 
             <div>
-              <a href="https://www.linkedin.com/feed/">
+              <a href="https://www.linkedin.com/in/eduardohoths/" target={"_blank"}>
                 <BsLinkedin size={20} />
               </a>
-              <a href="https://www.instagram.com/eduardo.hoths/">
+              <a href="https://www.instagram.com/eduardo.hoths/" target={"_blank"}>
                 <AiFillInstagram size={20} />
               </a>
-              <a href="https://www.facebook.com/eduardohoths/">
+              <a href="https://www.facebook.com/eduardohoths/" target={"_blank"}>
                 <ImFacebook size={20} />
               </a>
-              <a href="https://github.com/eduardohoths">
+              <a href="https://github.com/eduardohoths" target={"_blank"}>
                 <BsGithub size={20} />
               </a>
             </div>
