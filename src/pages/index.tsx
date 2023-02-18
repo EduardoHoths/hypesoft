@@ -1,11 +1,7 @@
 // Components
 import Head from "next/head";
-import dynamic from "next/dynamic";
+import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
-
-const Header = dynamic(() => import("../components/Header/Header"), { ssr: false });
-
-// Next
 
 export default function Home() {
   return (

@@ -26,6 +26,7 @@ export const Navigation = styled.nav`
   justify-content: flex-end;
   gap: 40px;
 
+  width: 100%;
   max-width: 1300px;
   height: 96px;
   margin: 0 auto;
@@ -90,7 +91,7 @@ export const MenuMobile = styled.div`
   justify-content: flex-end;
   padding: 16px;
   z-index: 1;
-  position: fixed;
+  position: static;
   top: 0;
   right: 0;
 
@@ -109,6 +110,16 @@ export const MenuMobile = styled.div`
     &.active {
       display: block;
     }
+  }
+  .handle-menu{
+    display: none;
+  }
+
+  @media (max-width: 414px){
+    .handle-menu{
+      display: unset;
+    }
+    position: fixed;
   }
 `;
 

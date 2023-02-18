@@ -1,7 +1,5 @@
-"use-client";
-
 // React
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 // Styles
 import {
@@ -21,47 +19,29 @@ import { BsBehance, BsTwitter } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-import dynamic from "next/dynamic";
-import useMobile from "../../hooks/useMobile";
-
-
-
-export default function Header() {
+export  function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  const { mobile } = useMobile();
 
   return (
     <HeaderStyled>
-      {mobile ? (
-        <>
-          <MenuMobile>
-            <button>
-              <AiOutlineMenu size={30} color="white" onClick={() => setMenuIsOpen(true)} />
-            </button>
+      <MenuMobile>
+        <button className="handle-menu">
+          <AiOutlineMenu size={30} color="white" onClick={() => setMenuIsOpen(true)} />
+        </button>
 
-            <div className={menuIsOpen ? "fade active" : "fade"}></div>
+        <div className={menuIsOpen ? "fade active" : "fade"}></div>
 
-            <Navigation menuIsOpen={menuIsOpen}>
-              <button>
-                <AiOutlineClose size={24} color="white" onClick={() => setMenuIsOpen(false)} />
-              </button>
+        <Navigation menuIsOpen={menuIsOpen}>
+          <button className="handle-menu">
+            <AiOutlineClose size={24} color="white" onClick={() => setMenuIsOpen(false)} />
+          </button>
 
-              <a href="#about">ABOUT</a>
-              <a href="#about">SERVICE</a>
-              <a href="#about">WORKS</a>
-              <a href="#about">CONTACT</a>
-            </Navigation>
-          </MenuMobile>
-        </>
-      ) : (
-        <Navigation>
           <a href="#about">ABOUT</a>
           <a href="#about">SERVICE</a>
           <a href="#about">WORKS</a>
           <a href="#about">CONTACT</a>
         </Navigation>
-      )}
+      </MenuMobile>
 
       <Wrapper>
         <ProfileContainer>
