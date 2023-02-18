@@ -10,7 +10,7 @@ export const HeaderStyled = styled.header`
   @media (min-height: 969px) {
     height: 969px;
   }
-  @media (max-height: 680px){
+  @media (max-height: 680px) {
     height: 705px;
   }
 
@@ -54,11 +54,6 @@ export const Navigation = styled.nav`
     }
 
     :hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
-
-    &.active::after {
       transform: scaleX(1);
       transform-origin: bottom left;
     }
@@ -113,12 +108,12 @@ export const MenuMobile = styled.div`
       display: block;
     }
   }
-  .handle-menu{
+  .handle-menu {
     display: none;
   }
 
-  @media (max-width: 414px){
-    .handle-menu{
+  @media (max-width: 414px) {
+    .handle-menu {
       display: unset;
     }
     position: fixed;
