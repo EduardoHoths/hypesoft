@@ -96,7 +96,7 @@ export const InfoStyled = styled.section`
       line-height: 22px;
     }
 
-    button span::before{
+    a span::before{
       height: 2px;
     }
   }

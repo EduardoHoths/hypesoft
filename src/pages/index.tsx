@@ -1,6 +1,7 @@
 // Components
 import Head from "next/head";
 import BannerHireMe from "../components/BannerHireMe/BannerHireMe";
+import ContactMe from "../components/ContactMe/ContactMe";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
@@ -25,6 +26,7 @@ export default function Home() {
       <LastWorks />
       <BannerHireMe />
       <Testimonial />
+      <ContactMe/>
 
       <Footer />
     </>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BannerStyled = styled.section`
-  margin: 169px auto 0 auto ;
+  margin: 169px auto 0 auto;
   margin-top: 169px;
 
   max-width: 1320px;
@@ -64,21 +64,23 @@ export const BannerStyled = styled.section`
     }
   }
 
-  @media (max-width: 425px){
-    strong{
+  @media (max-width: 425px) {
+    strong {
       font-size: 24px;
       line-height: 36px;
     }
 
-    button span::before{
+    a span::before {
       height: 2px;
     }
   }
 
-  @media (max-width: 375px){
-    strong{
-      font-size:18px;
+  @media (max-width: 375px) {
+    strong {
+      font-size: 18px;
       line-height: 30px;
     }
+
+    
   }
 `;

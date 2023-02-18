@@ -14,19 +14,18 @@ import {
 } from "./Styles";
 
 // Icons
-import { FiDribbble } from "react-icons/fi";
-import { BsBehance, BsTwitter } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { AiFillInstagram, AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-export  function Header() {
+export function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
     <HeaderStyled>
       <MenuMobile>
         <button className="handle-menu">
-          <AiOutlineMenu size={30} color="white" onClick={() => setMenuIsOpen(true)} />
+          <AiOutlineMenu size={30} color="#ed1ca6" onClick={() => setMenuIsOpen(true)} />
         </button>
 
         <div className={menuIsOpen ? "fade active" : "fade"}></div>
@@ -55,25 +54,33 @@ export  function Header() {
           </p>
 
           <MoreAbout>
-            <a href="https://www.linkedin.com/in/eduardohoths/" target={"_blank"} className="btn purple">HIRE ME</a>
-            <a href="/" className="btn">VIEW WORK</a>
+            <a
+              href="https://www.linkedin.com/in/eduardohoths/"
+              target={"_blank"}
+              className="btn purple"
+            >
+              HIRE ME
+            </a>
+            <a href="/" className="btn">
+              VIEW WORK
+            </a>
           </MoreAbout>
 
           <Social>
             <span>Follow me on</span>
 
             <div>
-              <a href="">
-                <FiDribbble size={20} />
+              <a href="https://www.linkedin.com/feed/">
+                <BsLinkedin size={20} />
               </a>
-              <a href="">
-                <BsBehance size={20} />
+              <a href="https://www.instagram.com/eduardo.hoths/">
+                <AiFillInstagram size={20} />
               </a>
-              <a href="">
+              <a href="https://www.facebook.com/eduardohoths/">
                 <ImFacebook size={20} />
               </a>
-              <a href="">
-                <BsTwitter size={20} />
+              <a href="https://github.com/">
+                <BsGithub size={20} />
               </a>
             </div>
           </Social>
