@@ -72,9 +72,9 @@ export function Header() {
             >
               HIRE ME
             </a>
-            <a href="/" className="btn">
+            <Link to="service" className="btn" smooth={true} offset={-50}>
               VIEW WORK
-            </a>
+            </Link>
           </MoreAbout>
 
           <Social>
