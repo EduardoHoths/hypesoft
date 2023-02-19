@@ -100,7 +100,7 @@ export function Header() {
         <ImageContainer>
           <img src="/profile.jpeg" alt="Eduardo Hoths" />
 
-          <img src="/Dot.svg" className="dots" />
+          <img src="/Dot-vertical.svg" className="dots" />
         </ImageContainer>
       </Wrapper>
     </HeaderStyled>

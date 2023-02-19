@@ -98,6 +98,14 @@ export const ContactForm = styled.div`
 export const Contacts = styled.div`
   height: 536px;
   width: 536px;
+  position: relative;
+
+  .dots {
+    position: absolute;
+
+    top: -30px;
+    right: -78px;
+  }
 
   > div {
     display: flex;
@@ -162,6 +170,13 @@ export const Contacts = styled.div`
       }
     }
   }
+
+  @media (max-width: 1500px) {
+    .dots {
+      right: 0;
+    }
+  }
+
   @media (max-width: 375px) {
     > div {
       gap: 10px;
@@ -178,7 +193,7 @@ export const Contacts = styled.div`
     }
 
     footer {
-      a + a{
+      a + a {
         margin: 0;
       }
       justify-content: center;

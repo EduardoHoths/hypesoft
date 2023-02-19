@@ -66,6 +66,8 @@ export default function ContactMe() {
       </ContactForm>
 
       <Contacts>
+        <img src="/Dot-horizontal.svg" className="dots" />
+
         <h4>Get in Touch</h4>
 
         <div>
