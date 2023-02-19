@@ -1,15 +1,17 @@
 // Components
-import Head from "next/head";
-import BannerHireMe from "../components/BannerHireMe/BannerHireMe";
-import ButtonToTop from "../components/ButtonToTop/ButtonToTop";
-import ContactMe from "../components/ContactMe/ContactMe";
+import {BannerHireMe} from "../components/BannerHireMe/BannerHireMe";
+import { ButtonToTop } from "../components/ButtonToTop/ButtonToTop";
+import { ContactMe } from "../components/ContactMe/ContactMe";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { Info } from "../components/Info/Info";
-import LastWorks from "../components/LastWorks/LastWorks";
+import { LastWorks } from "../components/LastWorks/LastWorks";
 import { MyService } from "../components/MyService/MyService";
 import { MyWorks } from "../components/MyWorks/MyWorks";
-import Testimonial from "../components/Testimonial/Testimonial";
+import { Testimonial } from "../components/Testimonial/Testimonial";
+
+// Next
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -31,7 +33,6 @@ export default function Home() {
       <Testimonial />
       <ContactMe />
 
-      
       <Footer />
     </>
   );

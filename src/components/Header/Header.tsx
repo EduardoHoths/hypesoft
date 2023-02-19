@@ -38,16 +38,16 @@ export function Header() {
             <AiOutlineClose size={24} color="white" onClick={() => setMenuIsOpen(false)} />
           </button>
 
-          <Link to="about" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+          <Link href="/" to="about" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
             ABOUT
           </Link>
-          <Link to="service" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+          <Link href="/" to="service" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
             SERVICE
           </Link>
-          <Link to="works" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+          <Link href="/" to="works" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
             WORKS
           </Link>
-          <Link to="contact" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
+          <Link href="/" to="contact" smooth={true} offset={-50} onClick={() => setMenuIsOpen(false)}>
             CONTACT
           </Link>
         </Navigation>
@@ -81,16 +81,16 @@ export function Header() {
             <span>Follow me on</span>
 
             <div>
-              <a href="https://www.linkedin.com/in/eduardohoths/" target={"_blank"}>
+              <a href="https://www.linkedin.com/in/eduardohoths/" target={"_blank"} data-testid="linkedin">
                 <BsLinkedin size={20} />
               </a>
-              <a href="https://www.instagram.com/eduardo.hoths/" target={"_blank"}>
+              <a href="https://www.instagram.com/eduardo.hoths/" target={"_blank"} data-testid="instagram">
                 <AiFillInstagram size={20} />
               </a>
-              <a href="https://www.facebook.com/eduardohoths/" target={"_blank"}>
+              <a href="https://www.facebook.com/eduardohoths/" target={"_blank"} data-testid="facebook">
                 <ImFacebook size={20} />
               </a>
-              <a href="https://github.com/eduardohoths" target={"_blank"}>
+              <a href="https://github.com/eduardohoths" target={"_blank"} data-testid="github">
                 <BsGithub size={20} />
               </a>
             </div>

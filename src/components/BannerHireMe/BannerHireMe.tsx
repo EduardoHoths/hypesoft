@@ -1,6 +1,6 @@
 import { BannerStyled } from "./Styles";
 
-export default function BannerHireMe() {
+export function BannerHireMe() {
   return (
     <BannerStyled>
       <strong>

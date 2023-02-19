@@ -1,9 +1,9 @@
 // Styles
 import { LastWorksStyled } from './Styles'
 
-export default function LastWorks() {
+export  function LastWorks() {
   return (
-    <LastWorksStyled>
+    <LastWorksStyled data-testid="last-works">
       <strong>
         I worked with <span>1</span> Company in Brazil
       </strong>

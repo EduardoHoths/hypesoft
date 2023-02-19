@@ -1,24 +1,6 @@
-// React
-import { useState } from "react";
-
-// React Icons
-import { AiFillStar } from "react-icons/ai";
-
-// Components
-import { Title } from "../Title/Title";
-import { CardTestimonial } from "./CardTestimonial";
-
-// Styles
-import { TestimonialArea, TestimonialList, TestimonialStyled } from "./Styles";
-
-export interface ITestimonial {
-  id: number;
-  author: string;
-  position: string;
-  company: string;
-  testimonial: string;
-  stars: number;
-}
+import { fireEvent, render, screen } from "@testing-library/react";
+import { Testimonial } from "../components/Testimonial/Testimonial";
+import { CardTestimonial } from "../components/Testimonial/CardTestimonial";
 
 const testimonialList = [
   {
@@ -59,36 +41,38 @@ const testimonialList = [
   },
 ];
 
-export function Testimonial() {
-  const [testimonial, setTestimonial] = useState<ITestimonial>(testimonialList[0]);
-  const [testimonialActive, setTestimonialActive] = useState<number>(1);
+describe("<Testimonial />", () => {
+  it("should render Testimonial component", () => {
+    render(<Testimonial />);
 
-  return (
-    <TestimonialStyled>
-      <Title title="Testimonial" />
+    const title = screen.getByRole("heading", { name: /Testimonial/i, level: 3 });
 
-      <div>
-        <TestimonialList>
-          {testimonialList.map((testimonial) => (
-            <CardTestimonial
-              testimonial={testimonial}
-              setTestimonial={setTestimonial}
-              setTestimonialActive={setTestimonialActive}
-              testimonialActive={testimonialActive}
-              key={testimonial.id}
-            />
-          ))}
-        </TestimonialList>
+    expect(title).toBeInTheDocument();
+  });
 
-        <TestimonialArea>
-          <header>
-            <AiFillStar size={32} color="#FF8718" />
-            <span>{testimonial.stars.toFixed(1)} Star Rating</span>
-          </header>
+  it("should render CardTestimonial component", () => {
+    render(
+      <CardTestimonial
+        setTestimonial={() => true}
+        setTestimonialActive={() => true}
+        testimonial={testimonialList[1]}
+        testimonialActive={1}
+      />
+    );
 
-          <p>{testimonial.testimonial}</p>
-        </TestimonialArea>
-      </div>
-    </TestimonialStyled>
-  );
-}
+    const card = screen.getByText(testimonialList[1].author);
+
+    expect(card).toBeInTheDocument();
+  });
+
+  it("should change active testimonial", () => {
+    render(<Testimonial />);
+
+    const card = screen.getByText(testimonialList[2].author);
+    fireEvent.click(card);
+
+    const testimonial = screen.getByText(testimonialList[2].testimonial);
+
+    expect(testimonial).toBeInTheDocument();
+  });
+});

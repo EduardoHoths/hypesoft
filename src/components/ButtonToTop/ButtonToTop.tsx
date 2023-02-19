@@ -15,7 +15,7 @@ const Button = styled.button`
   bottom: 16px;
   right: 16px;
 
-  transition: .2s;
+  transition: 0.2s;
   background-color: #000;
 
   border-radius: 4px;
@@ -27,7 +27,7 @@ const Button = styled.button`
   transform: ${({ show }: { show: boolean }) => (show ? "translateY(0)" : "translateY(150%)")};
 `;
 
-export default function ButtonToTop() {
+export function ButtonToTop() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function ButtonToTop() {
   };
 
   return (
-    <Button onClick={handleToTop} show={show}>
+    <Button onClick={handleToTop} show={show} data-testid="button-to-top">
       <AiFillCaretUp size={24} color="white" />
     </Button>
   );

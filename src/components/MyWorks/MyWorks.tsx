@@ -1,15 +1,12 @@
-// React Icons
-import { BsArrowRight } from "react-icons/bs";
-
 // Components
 import { Title } from "../Title/Title";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 // Styles
-import { Card, MyWorksStyled } from "./Styles";
+import { MyWorksStyled } from "./Styles";
 
 // React Scroll
 import { Element } from "react-scroll";
+import { CardWork } from "./CardWork";
 
 const myWorks = [
   {
@@ -54,32 +51,14 @@ export function MyWorks() {
   return (
     <Element name="works">
       <MyWorksStyled>
-      <Title title="My Selected Works" />
+        <Title title="My Selected Works" />
 
-      <div className="cards">
-        {myWorks.map((work) => (
-          <AnimationOnScroll
-            key={work.id}
-            animateIn="hover-on-mobile"
-            initiallyVisible={true}
-            delay={500}
-          >
-            <Card>
-              <img src={work.img} alt={work.title} />
-
-              <div>
-                <h4>{work.title}</h4>
-
-                <a href={work.link} target="_blank" className="view-project">
-                  <span>VIEW PROJECT</span>
-                  <BsArrowRight size={24} color="#000" />
-                </a>
-              </div>
-            </Card>
-          </AnimationOnScroll>
-        ))}
-      </div>
-    </MyWorksStyled>
+        <div className="cards">
+          {myWorks.map((work) => (
+            <CardWork work={work} key={work.id} />
+          ))}
+        </div>
+      </MyWorksStyled>
     </Element>
   );
 }

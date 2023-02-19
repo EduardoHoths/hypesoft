@@ -1,16 +1,15 @@
 // Styles
-import { Card, MyServiceStyled } from "./Styles";
+import { MyServiceStyled } from "./Styles";
 
 // React Icons
-import { BsArrowRight, BsCode, BsPhone } from "react-icons/bs";
+import { BsCode, BsPhone } from "react-icons/bs";
 
 // Components
 import { Title } from "../Title/Title";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 // React Scroll
-import {Element} from "react-scroll";
-
+import { Element } from "react-scroll";
+import { CardService } from "./CardService";
 
 const myServices = [
   {
@@ -27,34 +26,16 @@ const myServices = [
 
 export function MyService() {
   return (
-   <Element name="service">
-     <MyServiceStyled>
-      <Title title="My Service"/>
+    <Element name="service" data-testid="my-service">
+      <MyServiceStyled>
+        <Title title="My Service" />
 
-      <div className="cards">
-        {myServices.map((service) => (
-          <AnimationOnScroll
-            animateIn="hover-on-mobile"
-            initiallyVisible={true}
-            delay={500}
-            key={service.id}
-          >
-            <Card>
-              <div>{service.icon}</div>
-
-              <div>
-                <h4>{service.title}</h4>
-
-                <a href="/" className="discuss-now">
-                  <span>DISCUSS NOW</span>
-                  <BsArrowRight size={24} color="#000" />
-                </a>
-              </div>
-            </Card>
-          </AnimationOnScroll>
-        ))}
-      </div>
-    </MyServiceStyled>
-   </Element>
+        <div className="cards">
+          {myServices.map((service) => (
+            <CardService service={service} key={service.id} />
+          ))}
+        </div>
+      </MyServiceStyled>
+    </Element>
   );
 }
